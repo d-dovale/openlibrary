@@ -134,7 +134,6 @@ export default {
             }
           });
 
-          console.log(recordsCopy);
           return recordsCopy;
         },
 
