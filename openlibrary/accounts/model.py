@@ -9,7 +9,7 @@ import hashlib
 import hmac
 import random
 import string
-from typing import TYPE_CHECKING, Any
+from typing import TYPE_CHECKING
 import uuid
 import logging
 import requests
@@ -122,7 +122,7 @@ def create_link_doc(key, username, email):
     """
     code = generate_uuid()
 
-    now = datetime.datetime.utcnow()
+    now = datetime.datetime.now()
     expires = now + datetime.timedelta(days=14)
 
     return {
